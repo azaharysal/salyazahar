@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>Boda de Azahar & Sal</title>
+<meta name="description" content="Miren & Ale — 3 de octubre de 2026, Isla de León. Todo lo que se pueda celebrar, se celebra.">
+<meta property="og:title" content="Boda de Azahar & Sal">
+<meta property="og:description" content="Miren & Ale — 3 de octubre de 2026, Isla de León. Todo lo que se pueda celebrar, se celebra.">
+<meta property="og:image" content="https://fusfuscaralus.github.io/Azahar-Sal/cover.jpg">
+<meta property="og:url" content="https://fusfuscaralus.github.io/Azahar-Sal/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Boda de Azahar & Sal">
+<meta name="twitter:description" content="Miren & Ale — 3 de octubre de 2026, Isla de León.">
+<meta name="twitter:image" content="https://fusfuscaralus.github.io/Azahar-Sal/cover.jpg">
+<link rel="preconnect" href="https://open.spotify.com">
+<link rel="preconnect" href="https://i.scdn.co">
+<link rel="dns-prefetch" href="https://open.spotify.com">
+<style>
+  :root{
+    --bg: #eef2ef;
+    --card-shadow: 0 30px 60px -20px rgba(40,60,55,0.35), 0 8px 20px -8px rgba(40,60,55,0.25);
+    --dot: #c7d3cc;
+    --dot-active: #6c8f83;
+    --hint: #7c8b85;
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    height:100%;
+    min-height:100vh;
+    min-height:100dvh;
+    margin:0;
+  }
+  body{
+    background: var(--bg);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    position:relative;
+    isolation:isolate;
+  }
+  body::before{
+    content:"";
+    position:fixed;
+    inset:-10%;
+    z-index:0;
+    pointer-events:none;
+    background:
+      radial-gradient(ellipse 60% 45% at 8% 4%, rgba(120,160,175,0.16), transparent 60%),
+      radial-gradient(ellipse 55% 42% at 96% 10%, rgba(150,140,120,0.13), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 6% 100%, rgba(148,138,168,0.14), transparent 62%),
+      radial-gradient(ellipse 55% 45% at 100% 96%, rgba(108,143,131,0.15), transparent 60%);
+  }
+  body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:0;
+    pointer-events:none;
+    opacity:0.38;
+    mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30'><g fill='none' stroke='%237f9a8c' stroke-width='0.8' stroke-linecap='round' opacity='0.5'><path d='M-3 6 Q 2 2 7 6 T 17 6 T 27 6 T 37 6'/><path d='M-3 21 Q 2 17 7 21 T 17 21 T 27 21 T 37 21'/></g><g fill='%237f9a8c' opacity='0.42'><ellipse cx='5' cy='16' rx='3.2' ry='1.25' transform='rotate(-30 5 16)'/></g><g stroke='%236c8f83' stroke-width='0.35' opacity='0.48'><path d='M3 16.8 L7 15.2'/></g><g fill='%239487a8' opacity='0.4'><ellipse cx='21' cy='2' rx='2.9' ry='1.1' transform='rotate(38 21 2)'/></g><g stroke='%238678a0' stroke-width='0.35' opacity='0.44'><path d='M19.4 3.2 L22.6 0.8'/></g><g fill='%237f9a8c' opacity='0.36'><ellipse cx='25' cy='18' rx='2.7' ry='1.05' transform='rotate(-15 25 18)'/></g><g stroke='%236c8f83' stroke-width='0.35' opacity='0.4'><path d='M23.4 18.7 L26.6 17.3'/></g><g fill='%239487a8' opacity='0.34'><ellipse cx='12' cy='11' rx='2.5' ry='1' transform='rotate(60 12 11)'/></g><g stroke='%238678a0' stroke-width='0.35' opacity='0.38'><path d='M10.9 9.2 L13.1 12.8'/></g><g fill='%237f9a8c' opacity='0.32'><ellipse cx='18' cy='26' rx='2.3' ry='0.9' transform='rotate(-42 18 26)'/></g><g stroke='%236c8f83' stroke-width='0.3' opacity='0.36'><path d='M16.6 27.2 L19.4 24.8'/></g><g fill='%239487a8' opacity='0.32'><ellipse cx='0' cy='27' rx='2.2' ry='0.85' transform='rotate(20 0 27)'/></g><g fill='%237f9a8c' opacity='0.28'><ellipse cx='29' cy='12' rx='2' ry='0.8' transform='rotate(-50 29 12)'/></g><g fill='%238678a0' opacity='0.3'><ellipse cx='9' cy='24' rx='1.9' ry='0.75' transform='rotate(10 9 24)'/></g><g fill='%236c8f83' opacity='0.3'><ellipse cx='27' cy='27' rx='1.8' ry='0.7' transform='rotate(-25 27 27)'/></g></svg>");
+    background-size:30px 30px;
+  }
+  .screen{
+    width:100%;
+    height:100%;
+    min-height:100vh;
+    min-height:100dvh;
+    max-width:900px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:16px;
+    padding: max(14px, env(safe-area-inset-top)) 10px max(14px, env(safe-area-inset-bottom));
+    position:relative;
+    z-index:1;
+  }
+
+  .stage{
+    width:100%;
+    max-width:min(92vw, 640px);
+    max-height:80vh;
+    max-height:80dvh;
+    flex: 0 1 auto;
+    -webkit-perspective: 1800px;
+    perspective: 1800px;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: pan-y;
+    cursor:pointer;
+    user-select:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .card{
+    position:relative;
+    width:100%;
+    height:100%;
+    max-width:min(92vw, 640px);
+    max-height:min(92vw, 640px);
+    aspect-ratio: 1 / 1;
+    -webkit-transform-style:preserve-3d;
+    transform-style:preserve-3d;
+    transition: transform 0.7s cubic-bezier(.65,.05,.36,1);
+    will-change: transform;
+    margin:auto;
+  }
+  .card.spin{ transform: rotateY(180deg); }
+  .card.spin-prev{ transform: rotateY(-180deg); }
+  .card.noanim{ transition:none !important; }
+
+  .face{
+    position:absolute;
+    inset:0;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+    border-radius: 16px;
+    overflow:visible;
+    background:#fff;
+    box-shadow: var(--card-shadow);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .face.back{
+    -webkit-transform: rotateY(180deg) translateZ(0);
+    transform: rotateY(180deg) translateZ(0);
+  }
+  .face.is-card-face{
+    background:transparent;
+    box-shadow:none;
+  }
+
+  .face img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+    pointer-events:none;
+    border-radius:13px;
+  }
+
+  .cardwrap{
+    position:relative;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+  }
+  .cardwrap.as-card{
+    gap:16px;
+  }
+  .cardpic{
+    position:relative;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .cardwrap.as-card .cardpic{
+    width:82%;
+    height:auto;
+  }
+  .cardwrap.as-card .cardpic img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:6px;
+    box-shadow: 0 14px 30px -10px rgba(40,60,55,0.28);
+  }
+
+  .copy-pill{
+    display:none;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    border:1px solid rgba(76,122,99,0.35);
+    background: rgba(255,255,255,0.72);
+    backdrop-filter: blur(2px);
+    color: var(--iban-green, #4c7a63);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size:12.5px;
+    font-weight:600;
+    letter-spacing:0.03em;
+    padding:8px 16px;
+    border-radius:999px;
+    box-shadow: 0 6px 16px -8px rgba(40,60,55,0.25);
+    cursor:pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform .15s ease, opacity .15s ease;
+    flex:0 0 auto;
+  }
+  .copy-pill.visible{ display:inline-flex; }
+  .copy-pill:active{ transform: scale(0.96); opacity:0.8; }
+  .copy-pill svg{
+    width:14px;
+    height:14px;
+    flex:0 0 auto;
+    opacity:0.85;
+  }
+
+  .loc-link{
+    position:absolute;
+    display:none;
+  }
+  .loc-link.visible{ display:block; }
+  .loc-chapel{ left:2.5%; top:39%; width:34%; height:12.5%; }
+  .loc-salinas{ left:69%; top:41%; width:23.5%; height:8%; }
+
+  .toast{
+    position:fixed;
+    left:50%;
+    bottom: max(26px, env(safe-area-inset-bottom));
+    transform: translate(-50%, 12px);
+    background: #3f5a4d;
+    color:#fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size:13px;
+    letter-spacing:.02em;
+    padding:10px 18px;
+    border-radius:999px;
+    box-shadow: 0 10px 24px -8px rgba(20,30,26,0.4);
+    opacity:0;
+    pointer-events:none;
+    transition: opacity .25s ease, transform .25s ease;
+    z-index:5;
+  }
+  .toast.show{
+    opacity:1;
+    transform: translate(-50%, 0);
+  }
+
+  .dots{
+    display:flex;
+    gap:9px;
+    align-items:center;
+    flex:0 0 auto;
+  }
+  .dot{
+    width:7px; height:7px;
+    border-radius:50%;
+    background: var(--dot);
+    transition: background .35s ease, transform .35s ease;
+  }
+  .dot.active{
+    background: var(--dot-active);
+    transform: scale(1.35);
+  }
+
+  .hint{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 12.5px;
+    letter-spacing: .04em;
+    color: var(--hint);
+    opacity: .85;
+    text-align:center;
+    transition: opacity .5s ease;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    flex:0 0 auto;
+  }
+  .hint.fade{ opacity: 0; }
+
+  .hint svg{
+    width:13px; height:13px;
+    animation: tapbeat 1.8s ease-in-out infinite;
+  }
+  @keyframes tapbeat{
+    0%,100%{ transform: scale(1); opacity:.9; }
+    50%{ transform: scale(1.18); opacity:1; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .card{ transition-duration: .01ms; }
+    .hint svg{ animation: none; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="screen">
+  <div class="stage" id="stage" role="button" aria-label="Toca para pasar la página">
+    <div class="card" id="card">
+      <div class="face front">
+        <div class="cardwrap" id="cardWrapFront">
+          <div class="cardpic">
+            <img id="imgFront" src="cover.jpg" alt="">
+            <a class="loc-link loc-chapel" id="locChapelFront" href="https://maps.app.goo.gl/wj9HGo2seYMrKwc48" target="_blank" rel="noopener" aria-label="Abrir la ubicación de la capilla en Google Maps"></a>
+            <a class="loc-link loc-salinas" id="locSalinasFront" href="https://maps.app.goo.gl/kWef3HdCM3FfZwBd9" target="_blank" rel="noopener" aria-label="Abrir la ubicación de Salinas San Vicente en Google Maps"></a>
+          </div>
+          <button class="copy-pill" id="copyFront" type="button" aria-label="Copiar número de cuenta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="12" height="12" rx="2"/>
+              <path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/>
+            </svg>
+            <span>Copiar número de cuenta</span>
+          </button>
+        </div>
+      </div>
+      <div class="face back">
+        <div class="cardwrap" id="cardWrapBack">
+          <div class="cardpic">
+            <img id="imgBack" src="invite.jpg" alt="">
+            <a class="loc-link loc-chapel" id="locChapelBack" href="https://maps.app.goo.gl/wj9HGo2seYMrKwc48" target="_blank" rel="noopener" aria-label="Abrir la ubicación de la capilla en Google Maps"></a>
+            <a class="loc-link loc-salinas" id="locSalinasBack" href="https://maps.app.goo.gl/kWef3HdCM3FfZwBd9" target="_blank" rel="noopener" aria-label="Abrir la ubicación de Salinas San Vicente en Google Maps"></a>
+          </div>
+          <button class="copy-pill" id="copyBack" type="button" aria-label="Copiar número de cuenta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="12" height="12" rx="2"/>
+              <path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/>
+            </svg>
+            <span>Copiar número de cuenta</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Número copiado</div>
+
+  <div class="dots" id="dots">
+    <span class="dot active" data-i="0"></span>
+    <span class="dot" data-i="1"></span>
+  </div>
+
+  <div class="hint" id="hint">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 11.5V6a1.5 1.5 0 0 1 3 0v4"/>
+      <path d="M12 9.8V4.5a1.5 1.5 0 0 1 3 0V10"/>
+      <path d="M15 9.5a1.5 1.5 0 0 1 3 0V13"/>
+      <path d="M6 11V8.5a1.5 1.5 0 0 1 3-.2"/>
+      <path d="M18 13v3a6 6 0 0 1-6 6h-1a6 6 0 0 1-5.6-3.8L4 14.5c-.5-1 .1-2.3 1.4-2.4a1.7 1.7 0 0 1 1.6.9"/>
+    </svg>
+    <span>Toca para pasar la página</span>
+  </div>
+
+  <audio id="songAudio" src="song.mp3" preload="auto" loop playsinline></audio>
+</div>
+
+<script>
+(function(){
+  var images = ["cover.jpg", "invite.jpg"];
+  var idx = 0; // index currently shown on front
+  var spinning = false;
+
+  var card = document.getElementById('card');
+  var stage = document.getElementById('stage');
+  var faceFront = document.querySelector('.face.front');
+  var faceBack = document.querySelector('.face.back');
+  var cardWrapFront = document.getElementById('cardWrapFront');
+  var cardWrapBack = document.getElementById('cardWrapBack');
+  var imgFront = document.getElementById('imgFront');
+  var imgBack = document.getElementById('imgBack');
+  var copyFront = document.getElementById('copyFront');
+  var copyBack = document.getElementById('copyBack');
+  var locChapelFront = document.getElementById('locChapelFront');
+  var locSalinasFront = document.getElementById('locSalinasFront');
+  var locChapelBack = document.getElementById('locChapelBack');
+  var locSalinasBack = document.getElementById('locSalinasBack');
+  var toast = document.getElementById('toast');
+  var hint = document.getElementById('hint');
+  var dots = Array.prototype.slice.call(document.querySelectorAll('.dot'));
+
+  var IBAN_RAW = "ES0301287820810102561495";
+
+  function next(idx){ return (idx + 1) % images.length; }
+  function prev(idx){ return (idx - 1 + images.length) % images.length; }
+
+  // "thanks.jpg" (the account/IBAN page) shows at real card size, floating
+  // directly on the textured background instead of inside a white square,
+  // with a plain copy button underneath — the card artwork itself is never
+  // touched. "invite.jpg" gets two invisible tap zones over the ceremony
+  // and reception lines, linking out to Google Maps.
+  function setCardLook(faceEl, wrapEl, imageIndex){
+    var isCard = images[imageIndex] === 'thanks.jpg';
+    var isInvite = images[imageIndex] === 'invite.jpg';
+    wrapEl.classList.toggle('as-card', isCard);
+    faceEl.classList.toggle('is-card-face', isCard);
+    wrapEl.querySelector('.copy-pill').classList.toggle('visible', isCard);
+    var links = wrapEl.querySelectorAll('.loc-link');
+    for (var i = 0; i < links.length; i++){
+      links[i].classList.toggle('visible', isInvite);
+    }
+  }
+
+  function showToast(){
+    toast.classList.add('show');
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(function(){ toast.classList.remove('show'); }, 1600);
+  }
+
+  function copyIban(e){
+    e.preventDefault();
+    e.stopPropagation();
+    function done(){ showToast(); }
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(IBAN_RAW).then(done).catch(function(){ fallbackCopy(); });
+    } else {
+      fallbackCopy();
+    }
+    function fallbackCopy(){
+      var ta = document.createElement('textarea');
+      ta.value = IBAN_RAW;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      try { document.execCommand('copy'); } catch(err){}
+      document.body.removeChild(ta);
+      done();
+    }
+  }
+
+  copyFront.addEventListener('click', copyIban);
+  copyBack.addEventListener('click', copyIban);
+
+  [locChapelFront, locSalinasFront, locChapelBack, locSalinasBack].forEach(function(a){
+    a.addEventListener('click', function(e){ e.stopPropagation(); });
+  });
+
+  setCardLook(faceFront, cardWrapFront, idx);
+
+  imgBack.src = images[next(idx)];
+  setCardLook(faceBack, cardWrapBack, next(idx));
+
+  function setDots(activeIdx){
+    dots.forEach(function(d){
+      d.classList.toggle('active', parseInt(d.dataset.i,10) === activeIdx);
+    });
+  }
+
+  // direction: 'next' (flips toward the right) or 'prev' (flips toward the left)
+  function flip(direction){
+    if (spinning) return;
+    spinning = true;
+    hint.classList.add('fade');
+
+    var isNext = direction !== 'prev';
+    var target = isNext ? next(idx) : prev(idx);
+
+    // Load the destination image onto the back face before rotating, so it's
+    // already the right content the instant the flip reveals that face.
+    imgBack.src = images[target];
+    setCardLook(faceBack, cardWrapBack, target);
+
+    card.classList.add(isNext ? 'spin' : 'spin-prev');
+
+    card.addEventListener('transitionend', function onEnd(e){
+      if (e.propertyName !== 'transform') return;
+      card.removeEventListener('transitionend', onEnd);
+
+      idx = target;
+
+      // Snap back to 0deg instantly, with the (now current) image as the front face.
+      card.classList.add('noanim');
+      card.classList.remove('spin', 'spin-prev');
+      imgFront.src = images[idx];
+      setCardLook(faceFront, cardWrapFront, idx);
+
+      // Force reflow so the browser applies the no-transition jump before we re-enable it.
+      void card.offsetWidth;
+      card.classList.remove('noanim');
+
+      setDots(idx);
+      spinning = false;
+    });
+  }
+
+  stage.addEventListener('click', function(e){
+    var rect = stage.getBoundingClientRect();
+    var x = e.clientX - rect.left;
+    flip(x < rect.width / 2 ? 'prev' : 'next');
+  });
+
+  stage.addEventListener('keydown', function(e){
+    if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowRight'){
+      e.preventDefault();
+      flip('next');
+    } else if (e.key === 'ArrowLeft'){
+      e.preventDefault();
+      flip('prev');
+    }
+  });
+  stage.setAttribute('tabindex', '0');
+
+  // basic swipe support: swipe left -> next page, swipe right -> previous page
+  var touchStartX = null;
+  stage.addEventListener('touchstart', function(e){
+    touchStartX = e.touches[0].clientX;
+  }, {passive:true});
+  stage.addEventListener('touchend', function(e){
+    if (touchStartX === null) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    touchStartX = null;
+    if (Math.abs(dx) > 30) flip(dx < 0 ? 'next' : 'prev');
+  }, {passive:true});
+
+  // Song: plays through a plain, own-hosted <audio> element (no visible
+  // controls, so nothing of it is ever shown). Being our own file rather
+  // than a cross-origin embed, .play() is direct and synchronous — much
+  // more reliable on Android than the old Spotify iframe. Browsers still
+  // block sound before any tap regardless of source, so it starts on the
+  // very first interaction, normally the same tap that opens the invitation.
+  var songAudio = document.getElementById('songAudio');
+  var playConfirmed = false;
+  var fadeRunning = false;
+  var TARGET_VOLUME = 0.11;
+
+  function fadeIn(){
+    if (fadeRunning) return;
+    fadeRunning = true;
+    // Very long, very gradual crescendo — starts essentially silent and
+    // eases up over about 100 seconds, curving very slowly at first so the
+    // earliest steps are imperceptible and the song never "jumps in".
+    var STEP_COUNT = 60;
+    var STEP_MS = 1650; // ~100 seconds total
+    for (var i = 0; i <= STEP_COUNT; i++){
+      (function(i){
+        var progress = i / STEP_COUNT;
+        var eased = Math.pow(progress, 4); // very slow start, gentle finish
+        var v = Math.max(0.0015, TARGET_VOLUME * eased);
+        setTimeout(function(){
+          try { songAudio.volume = v; } catch(err){}
+        }, i * STEP_MS);
+      })(i);
+    }
+  }
+
+  function tryPlay(){
+    if (playConfirmed || !songAudio) return;
+    // Start fully muted — not just "very quiet" — so there is zero chance
+    // of a stray loud instant while the browser is still spinning up
+    // playback, before our volume ramp has had a moment to take hold.
+    try { songAudio.muted = true; } catch(err){}
+    try { songAudio.volume = 0.002; } catch(err){}
+    try { songAudio.currentTime = 0; } catch(err){}
+    var p = songAudio.play();
+    if (p && typeof p.then === 'function'){
+      p.then(function(){
+        playConfirmed = true;
+        unmuteAndFade();
+      }).catch(function(){
+        // Blocked this time (common on the very first attempt in some
+        // Android browsers) — the next tap will try again.
+      });
+    } else {
+      // Older browsers without a Promise-based play(): assume it worked.
+      playConfirmed = true;
+      unmuteAndFade();
+    }
+  }
+
+  function unmuteAndFade(){
+    // A short pause with playback already confirmed running and silent,
+    // then unmute right at the near-zero volume already set, and only then
+    // start the gradual rise.
+    setTimeout(function(){
+      try { songAudio.muted = false; } catch(err){}
+      fadeIn();
+    }, 150);
+  }
+
+  // Keep trying on every tap/click until playback is actually confirmed —
+  // a single missed attempt (common on Android) shouldn't mean silence for
+  // the whole visit.
+  ['pointerdown', 'touchstart', 'click'].forEach(function(evt){
+    document.addEventListener(evt, tryPlay, {passive:true});
+  });
+
+  // Fullscreen also needs a real tap to be granted (like sound), so it's
+  // requested on the very first interaction too. Not every mobile browser
+  // supports it for a plain page (notably iOS Safari doesn't), so this is a
+  // best-effort — the page already fills the whole screen either way.
+  function tryFullscreen(){
+    var el = document.documentElement;
+    var request = el.requestFullscreen || el.webkitRequestFullscreen ||
+                   el.mozRequestFullScreen || el.msRequestFullscreen;
+    var already = document.fullscreenElement || document.webkitFullscreenElement ||
+                   document.mozFullScreenElement || document.msFullscreenElement;
+    if (request && !already){
+      try {
+        var result = request.call(el);
+        if (result && result.catch) result.catch(function(){});
+      } catch(err){}
+    }
+  }
+  document.addEventListener('pointerdown', tryFullscreen, {once:true, passive:true});
+  document.addEventListener('touchstart', tryFullscreen, {once:true, passive:true});
+})();
+</script>
+</body>
+</html>
